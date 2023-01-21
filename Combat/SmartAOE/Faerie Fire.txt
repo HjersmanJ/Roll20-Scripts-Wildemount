@@ -1,0 +1,33 @@
+!smartaoe {{
+  --title|Faerie Fire
+  --leftsub|Slot level ?{Cast at what level?|1|2|3|4|5|6|7|8|9}
+  --rightsub|DC @{selected|spell_save_dc} DEX
+  --titlecardbackground|linear-gradient(blue, cyan)
+  
+  --oddrowbackground|#00ccff
+  --evenrowbackground|#edfcfc
+  --oddrowfontcolor|#000000
+  --tablebgcolor|#edfcfc
+  
+  --controlTokName|AoEControlToken
+  --controlTokSize|1
+  
+  --aoeColor|#00ccff50
+  --aoeOutlineColor|#0099ff
+  --aoeType|square, float
+  --radius|10ft
+  --minGridArea|0.25
+  --minTokArea|0.25
+  
+  --fx|glow-holy
+  --dc|@{selected|spell_save_dc}
+  --saveFormula|?{SaveType|Normal,5eDEX|Advantage,<<2d20kh1 + a{dexterity_save_bonus&#125;>>|Disadvantage,<<2d20kl1 + a{constitution_save_bonus&#125;>>}
+  
+  --autoApply|yes
+  --conditionFail|archery-target
+  --bar|1
+  --zeroHPmarker|dead
+  
+  --desc|Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
+Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can’t benefit from being invisible.
+}}

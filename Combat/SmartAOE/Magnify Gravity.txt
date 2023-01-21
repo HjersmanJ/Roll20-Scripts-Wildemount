@@ -1,0 +1,37 @@
+!smartaoe {{
+  --title|Magnify Gravity
+  --leftsub|Slot level ?{Cast at what level?|1|2|3|4|5|6|7|8|9}
+  --rightsub|DC @{selected|spell_save_dc} CON
+  --titlecardbackground|linear-gradient(blue, cyan)
+  
+  --oddrowbackground|#00ccff
+  --evenrowbackground|#edfcfc
+  --oddrowfontcolor|#000000
+  --tablebgcolor|#edfcfc
+  
+  --controlTokName|AoEControlToken
+  --controlTokSize|1
+  
+  --aoeColor|#00ccff50
+  --aoeOutlineColor|#0099ff
+  --aoeType|circle, float
+  --radius|10ft
+  --minGridArea|0.25
+  --minTokArea|0.25
+  
+  --fx|burst-death
+  --dc|@{selected|spell_save_dc}
+  --saveFormula|?{SaveType|Normal,5eCON|Advantage,<<2d20kh1 + a{constitution_save_bonus&#125;>>|Disadvantage,<<2d20kl1 + a{constitution_save_bonus&#125;>>}
+  
+  --damageFormula1|[[(?{Cast at what level?})d8]]
+  --damageType1|Force
+  --instant|1
+  
+  --autoApply|yes
+  --bar|1
+  --zeroHPmarker|dead
+  
+  --desc|The gravity in a 10-foot-radius sphere centered on a point you can see within range increases for a moment. Each creature in the sphere on the turn when you cast the spell must make a Constitution saving throw. On a failed save, a creature takes 2d8 force damage, and its speed is halved until the end of its next turn. On a successful save, a creature takes half as much damage and suffers no reduction to its speed.
+
+Until the start of your next turn, any object that isn't being worn or carried in the sphere requires a successful Strength check against your spell save DC to pick up or move.
+}}
