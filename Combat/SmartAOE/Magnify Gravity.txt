@@ -28,6 +28,7 @@
   --instant|1
   
   --autoApply|yes
+  --conditionFail|
   --bar|1
   --zeroHPmarker|dead
   
